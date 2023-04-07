@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
+                  <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="./tetris_friends.html">Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="doughnuttery_background"></div>
+    <div class="jumbotrons">
+      <div class="row pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg jumbo-card">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 jumbo-inner">
+          <h1 class="display-2 mb-2 fw-bold lh-1">Doughnuttery</h1>
+          <p class="lead mb-5 mt-4">Understanding the buildng blocks of front end UX and UI design.</p>
+          
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="./stylesheets/images/dough1.jpg" alt="" width="720" />
+        </div>
+      </div>
+    </div>
+
+    <section class="container doughnuttery_container_one">
+      <h2 class="display-3 text-start">Description</h2>
+      <div class="inner_container">
+        <p class="text-start">
+          This project I did for my WEB 1400 class. This project was designed in order to understand the building blocks
+          of basic web HTML and CSS website creation. The premise was to redesign a page for a website to make it look
+          more presentable and customer intuitive. Doughnuttery was an online retailer selling shipped doughnuts to the
+          world, and I wanted to give it a more fun and Willy Wonka look to the web application.
+        </p>
+        <div class="dough_img">
+          <img src="./stylesheets/images/dough2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container doughnuttery_container_two">
+      <h2 class="display-3">Relevence</h2>
+      <div class="inner_container">
+        <p>
+          I wanted to included this web project to show my progress to the public. Most people would say you should put
+          your best foot forward on every project on a portfolio but in my own opinion I really enjoy seeing the
+          progress I have made to get where I am. If you can’t like the worst parts of you then how will you ever like
+          the best parts of you? It may look a bit “crunchy and corny” as I would say, but I think this was the start in
+          major steps into actually enjoying front end UI development.
+        </p>
+        <div class="dough_two_img">
+          <img src="./stylesheets/images/dough3.jpg" alt="" />
+          <img src="./stylesheets/images/dough4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-container pb-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+        <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

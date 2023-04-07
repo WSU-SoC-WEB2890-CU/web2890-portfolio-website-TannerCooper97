@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
+                  <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+            <div class="tetris_background"></div>
+            <div class="jumbotrons">
+              <div class="row pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg jumbo-card">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 jumbo-inner">
+                  <h1 class="display-2 mb-2 fw-bold lh-1">Tetris Friends</h1>
+                  <p class="lead mb-5 mt-4">Project created to fully understand, develop, and publish a application with the REACT framework in a work
+                    realted enviorment.</p>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-lg-3">
+                    <a href="https://github.com/DevMountain-tetris-friends/tetris-friends" target="_blank" class="btn-basic first">Git Hub</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                  <img class="rounded-lg-3" src="./stylesheets/images/tetrisFreinds.JPG" alt="" width="720" />
+                </div>
+              </div>
+            </div>
+
+    <section class="container map_container_one">
+      <h2 class="display-3 text-start">Description</h2>
+      <div class="inner_container">
+        <p class="mb-5 text-start">
+          This project was my last project done at DevMountain. It required the use of, REACT, Node.js, PostgreSQL,
+          REACT redux, SASS, Socket.io, OAuth, and other extended libraries within REACT. I wanted to show case this
+          project because it has been the project I have learned the most from. I really enjoyed directing the team I
+          was given and wouldn’t have traded the experience for anything else. This project by far gave me a good
+          perspective on how real world web development is like and still encourages me today to continue learning.
+        </p>
+      </div>
+    </section>
+
+    <section class="container map_container_one">
+        <h2 class="display-3 mt-5 text-center">Login Page</h2>
+        <div class="inner_container">
+            <div class="map_one_img">
+            <img src="./stylesheets/images/tetrisFreinds1.jpg" alt="" />
+          </div>
+          <p class="text-center">
+            The login page allows users to make a RESTful request to our server after being authorized through OAuth’s hashing, and then is returned their information from the PostgreSQL database. Once having the information it will take the user to the main landing page of the website. Users also have the choice to register, by which they would enter in their first and last name, email, and a user ID in a pop up window created with REACT hooks. We also included a guest feature for users to check out the website before needing to register.
+          </p>
+        </div>
+      </section>
+
+      
+    <section class="container map_container_Three text-left">
+        <h2 class="display-3 mt-5 ">Home Page</h2>
+        <div class="inner_container">
+            <div class="map_one_img">
+            <img src="./stylesheets/images/tetrisFreinds2.jpg" alt="" />
+          </div>
+          <p class="text-left">
+            Once the users have gotten to the home page, they are met with options to log out, check out their personal profile and edit it, choose a game mode, view the leader board, or chat with other users in a public space using socket.io connections. They also have access to the contact page to contact us as developers. 
+          </p>
+        </div>
+      </section>
+
+      <section class="container map_container_four text-left">
+        <div class="inner_container">
+            
+          <div class="four_container text-left">
+            <h2 class="display-3 mt-5 ">Player page</h2>
+            <p class="text-left fs-4">
+                Once the users have gotten to the home page, they are met with options to log out, check out their personal profile and edit it, choose a game mode, view the leader board, or chat with other users in a public space using socket.io connections. They also have access to the contact page to contact us as developers. 
+              </p>
+            </div>
+            <div class="map_one_img">
+              <img src="./stylesheets/images/tetrisFreinds3.JPG" alt="" />
+            </div>
+        </div>
+      </section>
+
+      <section class="container map_container_five text-left">
+        <h2 class="display-3 mt-5 text-center">Game Mode Page</h2>
+        <div class="inner_container">
+            <div class="map_one_img">
+            <img src="./stylesheets/images/tetrisFreinds5.jpg" alt="" />
+          </div>
+          <p class="text-left">
+            This is where most of the bulk of the work went to in the project. Tetris itself proved a lot harder to make then I initially thought. Since this is all ran in JavaScript, specifically the REACT framework, every time we make a change to the DOM, it has to “repaint” the entire webpage. Which, if you have ever played Tetris before, the pieces tend to progressively get faster, which is a lot to load for a “lightly built” web page. Along with running into problems with strictness using react router, this took entire days to understand. Further more, after completing a game of tetris, the users score was compared to their previous score to check if it was a highest score for them. Which also checked to see if their highest score beat the leader boards highest score. All in all though, learning about creating my own personal hooks, and having the understanding how state is managed by the DOM and by requests, I wouldn’t trade this experience for anything.
+
+          </p>
+        </div>
+      </section>
+
+      <section class="container map_container_Three text-left">
+        <h2 class="display-3 mt-5 ">About Page</h2>
+        <div class="inner_container">
+            <div class="map_one_img">
+            <img src="./stylesheets/images/tetrisFreinds6.jpg" alt="" />
+          </div>
+          <p class="text-left">
+            This page is accessed by clicking on the about icon. It gives information about 
+            what the project is, why we created it, what was used in the process. It also has links to all of our GitHub accounts and Linkedin Profiles for future employers or
+            collaborators to access.           </p>
+        </div>
+      </section>
+
+      <section class="container map_container_Three text-left mb-5">
+        <h2 class="display-3 mt-5 text-center">Summery</h2>
+        <div class="inner_container">
+          <p class="text-left">
+            In summery directing a team with only previous experience in my fraternity did give me anxiety, but with the team I was given it felt as if I was personally managing a small dev team for a company. I learned a lot from this project and couldn’t have done it with my amazing team. I appreciate all of the intricacies, delays, debuggings, problems and solutions that this project offered me.  I can truly say that this project is the reason why I want to continue learning about all kinds of development. Regardless of what framework, language, or even operating system, I can’t wait what is in store for me in the future. 
+                  </p>
+        </div>
+      </section>
+
+    <div class="footer-container pb-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+        <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

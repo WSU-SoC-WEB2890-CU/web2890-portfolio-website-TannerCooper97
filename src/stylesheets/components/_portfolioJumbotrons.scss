@@ -1,0 +1,178 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.jumbotrons{
+    position: relative;
+    padding: 8rem 8rem;
+    margin-top: 2rem;
+    z-index: 1;
+    opacity: 1;
+    .jumbo-card{
+        background-color: white;
+        .jumbo-inner{
+           
+        }
+        
+    }
+}
+
+.portfolio_mock_up_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images/portfolio_mock_up_banner.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 900px) {
+        background-size: 140%;   
+        background-position: 70% 80%;
+    }
+
+    @media screen and (max-width: 770px) {
+        background-size: 170%;   
+        background-position: 70% 80%;
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        background-position: 72% 10%;
+    }
+}
+
+.code_crack_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images/codeCrack_banner.png");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 900px) {
+        background-size: 140%;   
+        background-position: 50% 10%;
+    }
+
+    @media screen and (max-width: 770px) {
+        background-size: 170%;   
+       
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        
+    }
+}
+
+.doughnuttery_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images/dough_banner.png");
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 1200px) {
+        background-size: 140%;   
+        background-position: 50% 80%;
+    }
+
+    @media screen and (max-width: 840px) {
+        background-size: 170%;   
+       
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        
+    }
+
+    @media screen and (max-width: 550px) {
+        background-size: 250%;   
+        
+    }
+}
+
+.vue_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images/vue_banner.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 900px) {
+        background-size: 140%;   
+        background-position: 50% 50%;
+    }
+
+    @media screen and (max-width: 770px) {
+        background-size: 170%;   
+       
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        
+    }
+}
+
+.map_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images/map_background.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 900px) {
+        background-size: 140%;   
+        background-position: 50% 50%;
+    }
+
+    @media screen and (max-width: 770px) {
+        background-size: 170%;   
+       
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        
+    }
+}
+
+.tetris_background{
+    position: absolute;
+    background-image: url("../../stylesheets/images//tetris_banner.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .65;
+    height: 70vh;
+    width: 100%;
+    z-index: -2;
+    @media screen and (max-width: 900px) {
+        background-size: 140%;   
+        background-position: 50% 50%;
+    }
+
+    @media screen and (max-width: 770px) {
+        background-size: 170%;   
+       
+    }
+
+    @media screen and (max-width: 700px) {
+        background-size: 220%;   
+        
+    }
+}

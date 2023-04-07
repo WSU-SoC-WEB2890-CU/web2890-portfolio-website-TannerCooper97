@@ -1,0 +1,26 @@
+
+// THEME COLORS 
+$dark-purple:   #3D0B37;
+$purple: #8A197D;
+$light-purple: #B922A8;
+$pink: #EB93E1;
+$dark-orange: #FF4000;
+$light-orange: #ff9239;
+$peach-orange: #FF9875;
+$dark-grey: #5E5E5E;
+$grey: #707078;
+$light-grey: #ADADAD;
+$white: #FFFFFF;
+$light-blue: #00B2CA;
+
+$primary: $dark-purple;
+$secondary: $dark-orange;
+$tertiary: $white;
+
+
+.gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+  }
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.scss"

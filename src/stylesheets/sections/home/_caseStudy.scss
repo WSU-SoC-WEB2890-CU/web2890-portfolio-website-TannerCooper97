@@ -1,0 +1,37 @@
+@use '../../custom'as *;
+@use '../../components/mixins'as *;
+
+.case-study{
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    padding: 2rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        h1{
+            padding: 2rem;
+            border-bottom: 1px solid black;
+            width: 60%;
+        }
+
+        .case-study-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../../images/tetrisFreinds1.jpg");
+            margin-top: 2rem;
+            width: 75%;
+            height: 30rem;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 900px) {
+            .case-study-image{
+                width: 100%;
+            } 
+        }
+    }
+}

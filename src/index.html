@@ -1,28 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
+                  <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="./tetris_friends.html">Case Study</a></li>
+                </ul>
+              </li>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+    <!-- INTRODUCTION -->
+    <section class="hero-container">
+      <div class="container col-xxl-8 px-0 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-10 col-xs-12 col-lg-7">
+            <img
+              src="./stylesheets/images//Astronaut_Mono.svg"
+              class="d-block mx-lg-auto img-fluid astro"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-5 col-sm-10">
+            <h2 class="hero-title display-4 fw-bold lh-1 mb-3">Hey,</h2>
+            <h2 class="hero-title display-4 fw-bold lh-1 mb-3">My Name is</h2>
+            <h1 class="hero-title display-1 fw-bold lh-1 mb-3">Tanner Cooper</h1>
+            <p class="hero-subtitle lead">
+              I am a utah-based full-stack Webdeveloper looking to create a new world around me. Click below and we can
+              get started. Lets innnovate the future.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="./contact.html" class="btn-basic first_hero text-light">Lets Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+    <section class="hobbies">
+      <div class="header-container">
+        <h2 class="text-center hobbie-header">So who are you?</h2>
+      </div>
+
+      <div class="element-container">
+        <div class="element-card">
+          <div class="front-facing">
+            <img class="dice" src="./stylesheets/images/dice2.svg" alt="" />
+          </div>
+          <div class="back-facing">
+            <h2>Hobbies</h2>
+            <p class="justify">
+              Most of my free time is usually spent on a computer playing video games or coding, however there are a few
+              different hobbies I am into which include: building gundam, playing the ukulele, painting, dungeons and
+              dragons, gloomhaven, philanthropy events, and building keyboards. .
+            </p>
+          </div>
+        </div>
+
+        <div class="element-card thisn">
+          <div class="front-facing">
+            <img class="dice" src="./stylesheets/images/open-book.svg" alt="" />
+          </div>
+          <div class="back-facing">
+            <h2>Education</h2>
+            <ul>
+              <li>
+                Weber State University
+                <ol>
+                  <li>Associates of General Studies</li>
+                  <li>Associates of Science</li>
+                  <li>Bachelors of Web and User Experience</li>
+                </ol>
+              </li>
+              <li>
+                Dev Mountain
+                <ol>
+                  <li>Certificate of Completion</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="element-card">
+          <div class="front-facing">
+            <img class="dice" src="./stylesheets/images/suitcase.svg" alt="" />
+          </div>
+          <div class="back-facing">
+            <h3 class="text-center">Student developer</h3>
+            <ul>
+              <li>Created a database using PostgreSQL to retrieve and update user profile and question information.</li>
+              <li>Provided authentication and user credentials using Bcrypt to verify their personal profiles.</li>
+              <li>Integrated web sockets in order for users to talk to each other in a public chat</li>
+              <li>
+                Project and team lead over four other developers using GitHub Teams and Trello in a online environment
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="element-card">
+          <div class="front-facing">
+            <img class="dice" src="./stylesheets/images/question-mark.svg" alt="" />
+          </div>
+          <div class="back-facing">
+            <h3>About Me</h3>
+            <p class="justify">
+              Well, where do I begin? I am 25 years old and live in Layton, Utah and currently work at Smiths as a
+              produce clerk. I am a student at WeberState, and a alumni of PsiPhiPsi fraternity. I am a avid vido game enjoyer, mostly playing Leauge of Legends or whatever my wallet allots.
+            </p>
+          </div>
+        </div>
+
+        <div class="element-card">
+          <div class="front-facing">
+            <img class="dice" src="./stylesheets/images/coding.svg" alt="" />
+          </div>
+          <div class="back-facing">
+            <h3 class="text-center">Skills</h3>
+            
+            <p>React, JavaScript, HTML, CSS, SQL, MySQL, PostgreSQL, Redux,
+              Node.js, Axios, Sass, C++, Java, and a little bit of C#. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item cara-portfolio">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Portfolio Mock Up</h1>
+              <p>
+                A multi-page website containing content about me and the ways I learned how to manipulate items using
+                advanced CSS techniques and SASS.
+              </p>
+              <a class="btn btn-lg second" href="./portfolio_mock_up.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item cara-crack">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Code Crack</h1>
+              <p>
+                A multi-page website created during my time at DevMountain. It was designed within REACT to help others
+                learn the REACT library.
+              </p>
+              <a class="btn btn-lg second" href="./code_crack.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item cara-dough">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Doughnuttery</h1>
+              <p>
+                A single page website created to learn the building blocks of HTML and CSS. The premise was to redesign
+                a page for a website to make it look more presentable and customer intuitive.
+              </p>
+              <a class="btn btn-lg second" href="./doughnuttery.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item cara-vue">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>VUE: RPS</h1>
+              <p>a web application created to replicate a rock paper scissors game.</p>
+              <a class="btn btn-lg second text-light" href="./vue_rps.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item cara-map active">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>MAP photography</h1>
+              <p>
+                A project created for a current ongoing client to help build relationship between consumer and
+                developer.
+              </p>
+              <a class="btn btn-lg second" href="./map_photography.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="case-study">
+      <div class="container">
+        <h1 class="">
+          Case Study: <br />
+          Tetris Friends
+        </h1>
+        <img class="case-study-image" src="./stylesheets/images/tetrisFreinds1.jpg" alt="" />
+        <button type="button" class="btn-basic first">LETS GO</button>
+      </div>
+    </section>
+
+    <div class="text-center connect-home-banner">
+      <h1 class="display-4">Looking to work together?</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead">
+          I am always looking for a new project to start or someone new to talk to. Regardless of what your background
+          is or who you are I always love meeting new people. Click below and lets get started.
+        </p>
+        <div class="d-sm-flex justify-content-sm-center pb-5">
+          <a href="./contact.html" class="btn-basic first">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container pb-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+        <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Case</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
+
+<!-- <section class="theWorks bg-dark">
+  <div class="top_parent_left">
+    <div class="indicator_container">
+    </div>
+    <div class="card_content_container">
+      <div class="card_container">
+        <h2 class="text-light">Project Mock Up</h2>
+      </div>
+      <div class="card_container">
+        <p class="text-light">This project was made during my WEB 2620 Advanced CSS class. It entailed creating a mock up portfolio Using SASS and advanced CSS techniques. I chose this one in particular because of how much CSS and front end work was put into it. It consisted of 6 different pages containing content about me and the many ways I learned how to manipulate items on a webpage.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="top_parent_right">
+    
+    
+  </div>
+</section> -->

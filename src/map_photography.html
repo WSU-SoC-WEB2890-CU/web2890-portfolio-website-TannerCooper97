@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
+                  <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="./tetris_friends.html">Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="map_background"></div>
+    <div class="jumbotrons">
+      <div class="row pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg jumbo-card">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 jumbo-inner">
+          <h1 class="display-2 mb-2 fw-bold lh-1">MAP photography</h1>
+          <p class="lead mb-5 mt-4">Project created for a current ongoing client to help build relationship between consumer and developer.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-lg-3">
+            <a href="https://willowy-halva-057e9d.netlify.app/" target="_blank" class="btn-basic first">Netlify</a>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="./stylesheets/images/map1.jpg" alt="" width="720" />
+        </div>
+      </div>
+    </div>
+
+    <section class="container map_container_one">
+      <h2 class="display-3 text-start">Description</h2>
+      <div class="inner_container">
+        <p class="text-start">
+            This project I did for my current WEB 2098 class. I initially had the idea to do a redesign of my aunts photography website in my WEB 2500 UX and UI design class. So I wanted to bring it to life while in this class. It features a landing page, about page, a fully functioning gallery, service pacakges, and a way of contact.
+        </p>
+        <div class="map_one_img">
+          <img src="./stylesheets/images/map2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container map_container_two">
+      <h2 class="display-3">Relevence</h2>
+      <div class="inner_container">
+        <p>
+            I chose to spotlight this project because its something I really have enjoyed doing for quite some time. It still needs some heavy work, and I have the work cut out for me but I can't wait to see the fully developed project. This has given a reason to go back into react and review the framework along with teach me how I might do more higher level front end UX and UI design. I hope to see this project one day be used in the real world seen by thousands of people, because my aunt deserves to be seen. 
+        </p>
+        <div class="map_two_img">
+          <img src="./stylesheets/images/map3.jpg" alt="" />
+          <img src="./stylesheets/images/map4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-container pb-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+        <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

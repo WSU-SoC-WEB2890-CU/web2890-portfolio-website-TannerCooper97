@@ -1,0 +1,51 @@
+@use "../../custom" as *;
+@use "../../components/mixins" as *;
+
+nav {
+  background-color: $dark-purple;
+  .container-fluid {
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .offcanvas {
+    .offcanvas-title {
+      font-size: 45px;
+    }
+    .nav-link {
+      opacity: 90%;
+      font-size: 25px;
+    }
+
+    .nav-link:hover {
+      opacity: 100%;
+    }
+    background-color: $dark-purple;
+    .offcanvas-title {
+      font-family: "Oswald", sans-serif;
+    }
+
+    .nav-link:hover {
+      color: $peach-orange;
+    }
+    .dropdown-toggle {
+      color: white;
+    }
+    .dropdown-menu {
+      background-color: $dark-purple;
+      border: 2px solid white;
+      .dropdown-item {
+        color: white;
+      }
+
+      .dropdown-divider {
+        border-bottom: 2px solid white;
+      }
+
+      .dropdown-item:hover {
+        color: $peach-orange;
+        background-color: $dark-purple;
+        transition: 600ms ease;
+      }
+    }
+  }
+}

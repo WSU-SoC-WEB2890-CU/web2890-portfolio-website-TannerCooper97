@@ -1,3 +1,73 @@
-/* Your styles go here */
+//Components
+@use './custom';
+
+// Import components
+@use './components/animations';
+@use './components/buttons';
+@use './components/mixins';
+
+//Home components
+@use './sections/home/navbar';
+@use './sections/home/hero';
+@use './sections/home/hobbies';
+@use './sections/home/theWorks';
+@use './sections/home/caseStudy';
+@use './sections/home/homeConnect.scss';
+@use './sections/home/footer.scss';
+
+//Portfolio Mock Up components
+@use './sections/portfolio_mock_up/portfolio_mock_up';
+@use './sections/code_crack/code_crack';
+@use './sections/Doughnutery/_doughnuttery';
+@use './sections/VueRps/vue_rps.scss';
+@use './sections/MAPphotography/map_photography';
+@use './sections/tetris_friends/tetris_friends.scss';
+@use './sections/contact/contact.scss';
+
+//Portfolio components
+@use './components/portfolioJumbotrons';
+
+//Bootstrap Imports
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+    h1{
+        font-size: 65px;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 45px;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h5{
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    p{
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    ul{
+        font-size: 20px;
+        li{
+            font-size: 20px;
+        }
+    }
+}
+

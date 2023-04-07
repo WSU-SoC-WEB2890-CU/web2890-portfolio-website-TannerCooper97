@@ -6,6 +6,7 @@ import { defineConfig } from "vite"
 import eslint from "@rollup/plugin-eslint"
 
 let input = {}
+process.env.BROWSER = "chrome";
 
 glob
   .sync("./src/**/*.html")

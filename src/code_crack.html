@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
+                  <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="./tetris_friends.html">Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="code_crack_background"></div>
+    <div class=" jumbotrons">
+      <div class="row pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg jumbo-card">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 jumbo-inner">
+          <h1 class="display-2 mb-2 fw-bold lh-1">Code Crack</h1>
+          <p class="lead mb-5 mt-4">Project created to help others learn how to learn the REACT library</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-lg-3">
+            <a href="https://github.com/TannerCooper97/codecrak" target="_blank" class="btn-basic first">Git Hub</a>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="./stylesheets//images/codeCrack.JPG" alt="" width="720" />
+        </div>
+      </div>
+    </div>
+
+    <section class="container code_crack_container_one">
+      <h2 class="display-3 text-start">Description</h2>
+      <div class="inner_container">
+        <p class="text-start">
+          This project was made during my time at DevMountain. It was designed within REACT to help others learn the
+          REACT library. It consisted of using a node server, a PostgreSQL database and 6 different components in order
+          to create a single page loading web application. This project specifically I created myself with the help of a
+          few dev mountain tutors. I personally wanted to create this website to game-ify the boring parts of learning
+          how to code in the react library .
+        </p>
+        <div class="code_img">
+          <img src="./stylesheets/images//codecrack2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container code_crack_container_two">
+      <h2 class="display-3">Relevence</h2>
+      <div class="inner_container">
+        <p>
+          This particular website I really enjoyed because it was the first time taking all of the building blocks of
+          DEVMountian’s course and turning it into something tangible. This was the first project to include a node
+          server, a database, multiple components, redux, routing, and hosting used all at once. After more time spent
+          working with react and other libraries I plan on coming back to this project in particular. I really enjoy the
+          idea of game-ify-ing the building blocks of coding to get possibly get more people into the field. In my
+          opinion, coding should be something everyone can enjoy.
+        </p>
+        <div class="two_img">
+          <img src="./stylesheets/images/codecrack3.jpg" alt="" />
+          <img src="./stylesheets/images/codecrack4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-container pb-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+        <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
+
+        <ul class="nav col-md-4 justify-content-end text-light">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

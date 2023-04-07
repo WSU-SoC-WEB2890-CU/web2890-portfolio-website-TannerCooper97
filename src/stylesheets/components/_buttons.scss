@@ -1,0 +1,84 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.btn-basic {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $light-purple;
+  border-radius: 10px;
+  color: $light-purple;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+}
+
+
+
+.first {
+  // background: $yellow;
+  border-color: $purple;
+  color: #000000 300ms;
+  background: {
+    image: linear-gradient(45deg,$purple 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+  
+  &:hover {
+    background-position: 0;
+  }
+
+  a, :active{
+    text-decoration: none;
+  }
+}
+
+.first_hero {
+  // background: $yellow;
+  border-color: white;
+  color: #000000 300ms;
+  background: {
+    image: linear-gradient(45deg,$purple 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+  
+  &:hover {
+    background-position: 0;
+    color: white;
+  }
+
+  a, :active{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.second {
+  border-color: $purple;
+  color: #ffffff;
+  box-shadow: 0 0 40px 40px $purple inset, 0 0 0 0 $purple;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 10px 0 $purple inset, 0 0 10px 4px $purple;
+    color: $purple;
+  }
+}
