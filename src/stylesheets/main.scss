@@ -5,6 +5,7 @@
 @use './components/animations';
 @use './components/buttons';
 @use './components/mixins';
+@use './components/customSvgs';
 
 //Home components
 @use './sections/home/navbar';
@@ -14,6 +15,7 @@
 @use './sections/home/caseStudy';
 @use './sections/home/homeConnect.scss';
 @use './sections/home/footer.scss';
+@use './sections/home/services.scss';
 
 //Portfolio Mock Up components
 @use './sections/portfolio_mock_up/portfolio_mock_up';
@@ -60,7 +62,7 @@ body{
         font-family: 'Open Sans', sans-serif;
     }
     p{
-        font-size: 20px;
+        font-size: 25px;
         font-family: 'Open Sans', sans-serif;
     }
     ul{

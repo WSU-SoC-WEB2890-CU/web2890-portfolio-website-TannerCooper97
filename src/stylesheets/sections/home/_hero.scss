@@ -7,23 +7,23 @@
 .hero-container{
     color: white;
     width: 100%;
-    padding-top: 3rem;
     justify-content: center;
-    background: radial-gradient(141.62% 138.08% at 85.52% -15.92%, #FF4000 0%, #3D0B37 100%);
-    .container{
-        position: relative;
-        width: 100%;
+    background: radial-gradient(100.62% 138.08% at 85.52% -15.92%, #FF4000 0%, #3D0B37 100%);
+    padding-bottom: 5rem;
+    .container-fluid{
         
-        .hero-title{
-            line-height: 5rem;
-            padding-right: 50px;
+        a{
+            margin-left: 0;
         }
-        .astro{
-            -webkit-transform: scaleX(-1);
+       
+        
+        img{
             transform: scaleX(-1) rotate(-20deg);
+   
         }
     }
 }
+
 
 .sub-hero{
     width: 100%;

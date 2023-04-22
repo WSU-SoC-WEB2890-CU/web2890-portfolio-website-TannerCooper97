@@ -1,0 +1,99 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+
+// FRONT END STYLES
+.space{
+    clip-path: url(#space-mask);
+    width: 80%;
+    aspect-ratio: 1 / 1;
+}
+
+.space-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden-svg{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.planet1, .planet2, .planet3{
+    position: absolute;
+}
+
+// Red
+.planet1 {
+    top: 21%;
+    left: 22%;
+    width: 10%;
+    transform: rotate(110deg);
+    animation: planet1 3s infinite alternate-reverse;
+}
+
+// Blue
+.planet2 {
+    top: 34%;
+    left: 11%;
+    width: 14%;
+  
+    animation: planet2 3.5s infinite alternate-reverse ease-in-out;
+}
+
+//Orange
+.planet3 {
+    top: 50%;
+    left: 55%;
+    width: 30%;
+    animation: planet3 4s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes planet1 {
+    from {
+        transform: translateY(8px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+// blue
+@keyframes planet2 { 
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(8px);
+    }
+}
+
+@keyframes planet3 {
+    from {
+        transform: translateY(15px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+// BACK END STYLES
+
+    .crab{
+        background-image: url('../../stylesheets/images/solen-feyissa-54xmXW7tJzo-unsplash.jpg');
+        background-size: 100%;
+        background-position: 50% 50%;
+        width: 500px;
+        height: 500px;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .database-img{   
+        width: 20%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }

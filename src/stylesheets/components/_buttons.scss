@@ -59,6 +59,7 @@
     position: 100%;
     size: 400%;
   }
+
   transition: background 300ms ease-in-out;
   
   &:hover {
@@ -69,6 +70,7 @@
   a, :active{
     text-decoration: none;
     color: white;
+    margin-left: 0;
   }
 }
 

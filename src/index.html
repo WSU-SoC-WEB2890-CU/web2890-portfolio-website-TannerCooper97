@@ -17,27 +17,26 @@
 
   <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand fs-3" href="#">Tanner Cooper</a>
+        <a class="navbar-brand" href="./index.html">Tanner Cooper</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
+          class="offcanvas offcanvas-end text-bg-dark"
           tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light fs-1" id="offcanvasDarkNavbarLabel">Where to?</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Where to?</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -48,7 +47,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -61,21 +60,21 @@
                   Portfolio
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Project Mock Up</a></li>
+                  <li><a class="dropdown-item" href="./portfolio_mock_up.html">Portfolio Mock Up</a></li>
                   <li><a class="dropdown-item" href="./code_crack.html">Code Crack</a></li>
                   <li><a class="dropdown-item" href="./doughnuttery.html">Doughnuttery</a></li>
-                  <li><a class="dropdown-item" href="./vue_rps.html">VUE:RPS</a></li>
+                  <li><a class="dropdown-item" href="./vue_rps.html">VUE: RPS</a></li>
                   <li><a class="dropdown-item" href="./map_photography.html">Map Photography</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
-                  <li><a class="dropdown-item" href="./tetris_friends.html">Case Study</a></li>
+                  <li><a class="dropdown-item" href="./tetris_friends.html">Tetris Friends</a></li>
                 </ul>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -83,9 +82,10 @@
     </nav>
 
     <!-- INTRODUCTION -->
+
     <section class="hero-container">
-      <div class="container col-xxl-8 px-0 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="container col-xxl-12 px-0 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-sm-center g-5 py-5">
           <div class="col-10 col-sm-10 col-xs-12 col-lg-7">
             <img
               src="./stylesheets/images//Astronaut_Mono.svg"
@@ -96,27 +96,94 @@
               loading="lazy"
             />
           </div>
-          <div class="col-lg-5 col-sm-10">
-            <h2 class="hero-title display-4 fw-bold lh-1 mb-3">Hey,</h2>
-            <h2 class="hero-title display-4 fw-bold lh-1 mb-3">My Name is</h2>
-            <h1 class="hero-title display-1 fw-bold lh-1 mb-3">Tanner Cooper</h1>
+          <div class="hero-content col-lg-5 col-sm-10">
+            <h1 class="hero-title display-1 fw-bold lh-1 mb-3">Whats Up?</h1>
             <p class="hero-subtitle lead">
-              I am a utah-based full-stack Webdeveloper looking to create a new world around me. Click below and we can
-              get started. Lets innnovate the future.
+              My name is Tanner Cooper, a utah-based full-stack Webdeveloper looking to create a new world around me.
+              Click below and we can get started. Lets innnovate the future.
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="./contact.html" class="btn-basic first_hero text-light">Lets Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3 class="display-2 mt-1">Front End</h3>
+              <p class="lh-lg">
+                Since I am a full stack web developer everything has to start with your front end applications. I have
+                experiance with HTML, CSS, Javascript, SASS, React, Vue, and many other libraries. Lets take that old
+                myspace page we made back in the early 2000s and turn it into something really awesome!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="container-fluid py-3">
+              <div class="space-container">
+                  <img class="space" src="./stylesheets/images/nasapic.jpg" alt="">
+                  <img class="planet1" src="./stylesheets/images/planet1.svg" alt="">
+                  <img class="planet2" src="./stylesheets/images/planet2.svg" alt="">
+                  <img class="planet3" src="./stylesheets/images/planet3.svg" alt="">
+              </div>
+              <svg class="hidden-svg">
+                <defs>
+                    <clipPath clipPathUnits="objectBoundingBox" id="space-mask">
+                        <path d="M303.49,371.1l-.2-.505a.145.145,0,0,0-.188-.082l-.505.2a.145.145,0,0,0-.082.188l.2.505a.145.145,0,0,0,.188.082l.505-.2A.145.145,0,0,0,303.49,371.1Zm-.547.166a.079.079,0,0,1-.1-.045l-.109-.281a.079.079,0,0,1,.045-.1l.281-.109a.079.079,0,0,1,.1.045l.109.281a.079.079,0,0,1-.045.1Z" transform="translate(-302.5 -370.5)" fill="#fff"/>
+                    </clipPath>
+                </defs>
+            </svg>
+          </div>
+          
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+            <div class="container-fluid section2 py-3 px-3">
+              <div>
+                <img src="./stylesheets/images/datasection.svg" alt="">
+                <img class="databit" src="./stylesheets/images/databit.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3 class="display-2 mt-1">Back End</h3>
+              <p class="lh-lg">
+                My personal favorite part of being full stack is also knowing back end development. I personally love
+                being the jack of all trades so having knowladge in Node.js, MySQL, PostgreSQL, server maintenance, and
+                middleware makes developing so much more enjoyable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <h3 class="display-2 mt-1">Customer Service</h3>
+              <p class="lh-lg">
+                Over the course of the last few years, I have worked as a casheir, customer service provider, vice
+                president, order fulfilment associate, server, and student group manager. If you can't tell, I really
+                like talking with people, and I would say people like talking to me.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+              <img src="./stylesheets/images/spacecustomerservice.svg" alt="cloud hosting illustration" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="hobbies">
+    <!-- About me -->
+   <section class="hobbies">
       <div class="header-container">
-        <h2 class="text-center hobbie-header">So who are you?</h2>
+        <h2 class="text-center hobbie-header display-1">So who are you?</h2>
       </div>
-
       <div class="element-container">
         <div class="element-card">
           <div class="front-facing">
@@ -124,15 +191,19 @@
           </div>
           <div class="back-facing">
             <h2>Hobbies</h2>
-            <p class="justify">
-              Most of my free time is usually spent on a computer playing video games or coding, however there are a few
-              different hobbies I am into which include: building gundam, playing the ukulele, painting, dungeons and
-              dragons, gloomhaven, philanthropy events, and building keyboards. .
-            </p>
+            
+              <ul>
+                <li>Video Games</li>
+                <li>Ukulele</li>
+                <li>Music Festivals</li>
+                <li>Dungeon and Dragons</li>
+                <li>Coding</li>
+                <li>Philanthropy</li>
+              </ul>
+          
           </div>
         </div>
-
-        <div class="element-card thisn">
+        <div class="element-card">
           <div class="front-facing">
             <img class="dice" src="./stylesheets/images/open-book.svg" alt="" />
           </div>
@@ -142,7 +213,6 @@
               <li>
                 Weber State University
                 <ol>
-                  <li>Associates of General Studies</li>
                   <li>Associates of Science</li>
                   <li>Bachelors of Web and User Experience</li>
                 </ol>
@@ -152,23 +222,6 @@
                 <ol>
                   <li>Certificate of Completion</li>
                 </ol>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="element-card">
-          <div class="front-facing">
-            <img class="dice" src="./stylesheets/images/suitcase.svg" alt="" />
-          </div>
-          <div class="back-facing">
-            <h3 class="text-center">Student developer</h3>
-            <ul>
-              <li>Created a database using PostgreSQL to retrieve and update user profile and question information.</li>
-              <li>Provided authentication and user credentials using Bcrypt to verify their personal profiles.</li>
-              <li>Integrated web sockets in order for users to talk to each other in a public chat</li>
-              <li>
-                Project and team lead over four other developers using GitHub Teams and Trello in a online environment
               </li>
             </ul>
           </div>
@@ -197,6 +250,108 @@
             <p>React, JavaScript, HTML, CSS, SQL, MySQL, PostgreSQL, Redux,
               Node.js, Axios, Sass, C++, Java, and a little bit of C#. 
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq py-5" class="faq">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+          <div class="heading-line"></div>
+          <p class="lead">"You really put a FAQ in your portfolio? On seccond thought this saves so much more time. - Colton Bell"</p>
+        </div>
+        <div class="row mt-5"> 
+          <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Do you attend school or work? What does your schedule look like?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes, I currently take classes at WeberState University. I am enrolled, and can roughly work around 25 to 35 hours a week.
+                    My usual schedule is school in the day, work at night. Since I am trained in 3 different departments, it can change day by day. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What are your hobbies, do you play sports or anything?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    My main hobby is pretty much video games. My entire youtube playlist is filled to the brim with video game analysis. I enjoy playing, building, and learning about video games. As for other interests, I play the uke, nerd out with my gloomhaven party, and wake surf with my family.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Where do you live?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    I currently live in Layton, Utah. It's a nice quiet town, and hope to maybe move outside of the area because of my inner travel bug. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Do you prefer Front End or Back End Development?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Previous to this question I would have said back end development, but over countless hours of CSS and SASS I have come to enjoy front end aswell. Whever my career might take me, I would very much enjoy both ends of development and see the bigger picture come to fruition. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Prefered Languages?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    I mostly enjoy Javascript for my logic, SQL for my data managment, and SASS for design. Regardless of favorites, learning new languages will always pique my interest.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Where do you see yourself in 5 years?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Ah, the "Do you actually have any clue what you are doing question." The initial answer is yes, I see myself graduated with my bachelors and working for a company I enjoy. 
+                    Honestly over the last 3 years I have been trying to find myself and I think that person really just wants to help others uisng my knowladge in webdevelopment. 
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -288,14 +443,16 @@
       </button>
     </div>
 
-    <section class="case-study">
+    <section class="case-study" id="case-study">
       <div class="container">
         <h1 class="">
           Case Study: <br />
           Tetris Friends
         </h1>
         <img class="case-study-image" src="./stylesheets/images/tetrisFreinds1.jpg" alt="" />
-        <button type="button" class="btn-basic first">LETS GO</button>
+        <div class="d-sm-flex justify-content-sm-center pb-5">
+          <a href="./tetris_friends.html" class="btn-basic first">Lets Go</a>
+        </div>
       </div>
     </section>
 
@@ -317,10 +474,10 @@
         <p class="col-md-4 mb-0">&copy; 2022 Company, Inc</p>
 
         <ul class="nav col-md-4 justify-content-end text-light">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Case</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact</a></li>
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#myCarousel" class="nav-link px-2 text-light">Portfolio</a></li>
+          <li class="nav-item"><a href="#case-study" class="nav-link px-2 text-light">Case</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-light">Contact</a></li>
         </ul>
       </footer>
     </div>
